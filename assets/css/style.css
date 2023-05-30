@@ -157,8 +157,8 @@ main {
 
     
 .back-avt {
-  width: 17rem;
-  height: 17rem;
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
   background: linear-gradient(to top left, #fef1fa, #88ddfa);
   display: flex;
@@ -169,8 +169,8 @@ main {
   transition: box-shadow .5s;
 }
 .img-avt {
-  width: 15rem;
-  height: 15rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 50%;
 }
 /* hover avatar */
