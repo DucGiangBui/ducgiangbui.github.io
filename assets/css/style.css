@@ -31,7 +31,7 @@ main {
 }
 @media only screen and (max-width: 780px) {
     main{
-        margin-top: 0px;
+        margin: 0px;
     }
     .cv_main{
         width: 100%;
@@ -136,7 +136,9 @@ main {
 }
 
 @media only screen and (max-width: 780px) {
+  
     .header-nav-link{
+      padding-top: 10px;
       box-shadow: rgba(6, 6, 6, 0.2) 0px 0px 10px 0px;
     }
     .nav-1 div .navbar-link{
@@ -379,6 +381,7 @@ main {
 .about-me-title {
   max-width: max-content;
   margin-top: 50px;
+  font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 5px;
   border-bottom: #007ced solid 3px;
@@ -457,10 +460,12 @@ footer{
   justify-content: center;
   list-style: none;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 .legarcy a{
   padding-right: 32px;
   align-items: center;
+  margin-bottom: 20px;
 }
 .legarcy a,
 .social ul li a{
@@ -473,15 +478,18 @@ footer{
 
 @media only screen and (max-width: 780px) {
   footer{
+    padding-top: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10px ;
   }
   .social ul .a3{
     padding-right: 0px;
   }
   .social ul{
     padding-left: 0px;
+    margin-bottom: 5px ;
   }
   .legarcy a{
     padding-right: 0px;
