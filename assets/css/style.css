@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body{
     background: linear-gradient(to bottom right, #fef1fa, #88ddfa);
     background-repeat: no-repeat;
@@ -164,8 +167,8 @@ main {
 
     
 .back-avt {
-  width: 16em;
-  height: 16em;
+  width: 20em;
+  height: 20em;
   border-radius: 50%;
   background: linear-gradient(to top left, #fef1fa, #88ddfa);
   display: flex;
@@ -173,12 +176,21 @@ main {
   align-items: center;
   margin-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
-  transition: box-shadow .5s;
 }
 .img-avt {
-  width: 14em;
-  height: 14em;
+  width: 18em;
+  height: 18em;
   border-radius: 50%;
+}
+@media only screen and (max-width: 1024px) {
+  .back-avt {
+    width: 17em;
+    height: 17em;
+  }
+  .img-avt {
+    width: 15em;
+    height: 15em;
+  }
 }
 /* hover avatar */
 
@@ -436,4 +448,28 @@ footer{
   .legarcy a{
     padding-right: 0px;
   }
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: calc(50% - 24.5px);
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: linear-gradient(to bottom right, #fef1fa, #88ddfa);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  color: #666666;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+#myBtn i{
+  padding: 0 7px;
+  font-size: 20px;
+}
+#myBtn:hover {
+  background-color: #555;
+  transform: scale(1.2);
 }
