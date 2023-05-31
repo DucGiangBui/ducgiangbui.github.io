@@ -63,7 +63,7 @@ main {
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .logo {
   text-decoration: none;
@@ -71,7 +71,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-right: auto;
   font-size: 25px;
 }
@@ -322,7 +322,7 @@ main {
     text-align: center;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .card-1-item-2 .card-basic-info .btn-card{
     display: flex;
     flex-direction: column;
@@ -467,7 +467,10 @@ main {
 
 
 footer{
-  border-top: #666666 solid 2px;
+  background-color: #fdfdfd;
+  border-bottom-left-radius: 30px 30px;
+  border-bottom-right-radius: 30px 30px;
+  border-top: rgba(6, 6, 6, 0.1) solid 1px;
   padding-top: 20px;
   display: flex;
   justify-content: space-between;
