@@ -286,7 +286,24 @@ main {
 .btn-card{
     padding-top: 20px;
 }
-
+@media only screen and (max-width: 1111px) {
+  .card-1 {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-1-item-1 {
+    width: 80%;
+  }
+  .card-1-item-2 {
+    width: 80%;
+  }
+  .job,
+  .name-cv,
+  .btn-card{
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 768px) {
   .card-1 {
     margin-top: 0;
