@@ -336,6 +336,12 @@ main {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .card-1-item-2 div .name-cv{
+    font-size: 35px;
+  }
+}
+
 .sidebar ul{
     transform: translateX(100%);
     padding: 20px;
