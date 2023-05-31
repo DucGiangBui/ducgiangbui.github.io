@@ -249,6 +249,19 @@ main {
     text-align: center;
   }
 }
+@media only screen and (max-width: 400px) {
+  .card-1-item-2 .card-basic-info .btn-card{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .btn-card button a{
+    margin-left: 0;
+  }
+  .btn-card :nth-child(2){
+    margin-top: 40px;
+  }
+}
 
 .sidebar ul{
     transform: translateX(100%);
@@ -344,5 +357,83 @@ main {
 }
 .about-me-p p{
   color: #666666;
-  font-size: 13px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 780px) {
+  .about-me-card{
+    flex-direction: column;
+  }
+  .about-me-item i{
+    font-size: 25px;
+  }
+  .about-me-item div h5{
+    font-size: 15px;
+  }
+  .about-me-item div p{
+    font-size: 11px;
+  }
+  .list-ab1 :nth-child(2){
+    margin-bottom: 0;
+  }
+  .list-ab2{
+    padding-left: 0;
+  }
+  .about-me-p .p1{
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  border-top: #666666 solid 2px;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.social ul{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-right: auto;
+}
+.legarcy a{
+  padding-right: 32px;
+  align-items: center;
+}
+.legarcy a,
+.social ul li a{
+  color: #666666;
+  text-decoration: none;
+}
+.legarcy a:hover{
+  color: #007ced;
+}
+
+@media only screen and (max-width: 780px) {
+  footer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .social ul .a3{
+    padding-right: 0px;
+  }
+  .social ul{
+    padding-left: 0px;
+  }
+  .legarcy a{
+    padding-right: 0px;
+  }
 }
