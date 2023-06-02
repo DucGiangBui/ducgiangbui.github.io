@@ -17,15 +17,31 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-window.addEventListener('load', function() {
-  // Tạo một mảng chứa các class cho các skill-item
-  var skillClasses = ['icon-primary', 'icon-secondary', 'icon-tertiary'];
 
-  // Lặp qua tất cả các skill-item
-  var skillItems = document.querySelectorAll('.skill-item');
-  for (var i = 0; i < skillItems.length; i++) {
-    // Thêm một class ngẫu nhiên từ mảng skillClasses
-    var randomClass = skillClasses[Math.floor(Math.random() * skillClasses.length)];
-    skillItems[i].classList.add(randomClass);
+window.addEventListener('resize', function() {
+  var element = document.getElementById('myElement');
+  if (window.innerWidth < 380) {
+    var swiper = new Swiper(".mySwiper", {
+      watchSlidesProgress: true,
+      slidesPerView: 2,
+    });
+  }
+  else if((window.innerWidth < 600)){
+    var swiper = new Swiper(".mySwiper", {
+      watchSlidesProgress: true,
+      slidesPerView: 2,
+    });
+  }
+  else if((window.innerWidth < 768)){
+    var swiper = new Swiper(".mySwiper", {
+      watchSlidesProgress: true,
+      slidesPerView: 3,
+    });
+  } 
+  else{
+    var swiper = new Swiper(".mySwiper", {
+      watchSlidesProgress: true,
+      slidesPerView: 5,
+    });
   }
 });
