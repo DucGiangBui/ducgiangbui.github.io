@@ -18,30 +18,30 @@ function topFunction() {
 }
 
 
-window.addEventListener('resize', function() {
-  var element = document.getElementById('myElement');
-  if (window.innerWidth < 380) {
-    var swiper = new Swiper(".mySwiper", {
-      watchSlidesProgress: true,
-      slidesPerView: 2,
-    });
-  }
-  else if((window.innerWidth < 600)){
-    var swiper = new Swiper(".mySwiper", {
-      watchSlidesProgress: true,
-      slidesPerView: 2,
-    });
-  }
-  else if((window.innerWidth < 768)){
-    var swiper = new Swiper(".mySwiper", {
-      watchSlidesProgress: true,
-      slidesPerView: 3,
-    });
-  } 
-  else{
-    var swiper = new Swiper(".mySwiper", {
-      watchSlidesProgress: true,
-      slidesPerView: 5,
-    });
+var swiper = new Swiper ('.mySwiper', {
+  slidesPerView: 2,
+  spaceBetween: 10,
+  breakpoints: {
+    380:{
+      slidesPerView: 1
+    },
+    480: {
+      slidesPerView: 2
+    },
+    640: {
+      slidesPerView: 2
+    },
+    768:{
+      slidesPerView: 3
+    },
+    1024:{
+      slidesPerView: 3
+    },
+    1050:{
+      slidesPerView: 4
+    },
+    1080:{
+      slidesPerView: 4
+    }, 
   }
 });

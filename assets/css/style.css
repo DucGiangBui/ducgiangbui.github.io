@@ -546,7 +546,7 @@ footer {
   background-color: #555;
   transform: scale(1.2);
 }
-/* .skill-list{
+/* .swiper-slide{
   display: flex; 
   flex-wrap: wrap;
   justify-content: space-between;
@@ -556,14 +556,14 @@ footer {
   transform: translateY(-0px);
   transition: all .2s;
 }
-.skill-list :hover{
+.swiper-slide :hover{
   transform: translateY(-5px);
   box-shadow: rgba(6, 6, 6, 0.2) 0px 0px 10px 0px;
   transition: all .2s ease-in-out;
 }
-.skill-list :hover i,
-.skill-list :hover h4,
-.skill-list :hover h1{
+.swiper-slide :hover i,
+.swiper-slide :hover h4,
+.swiper-slide :hover h1{
   transform: none;
   box-shadow: none;
 }
@@ -599,15 +599,30 @@ footer {
 } */
 
 .swiper {
-  max-width: 800px;
+  max-width: 100px;
   margin: 0px;
 }
+@media only screen and (max-width: 1920px) {
+  .swiper{
+    max-width: 805px;
+  }
+}
 @media only screen and (max-width: 1680px) {
+  .swiper{
+    max-width: 805px;
+  }
+}
+@media only screen and (max-width: 1380px) {
+  .swiper{
+    max-width: 650px;
+  }
+}
+@media only screen and (max-width: 1080px) {
   .swiper{
     max-width: 605px;
   }
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1050px) {
   .swiper{
     max-width: 605px;
   }
@@ -619,10 +634,14 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .swiper{
-    max-width: 300px;
+    max-width: 450px;
   }
 }
-
+@media only screen and (max-width: 640px) {
+  .swiper{
+    max-width: 350px;
+  }
+}
 @media only screen and (max-width: 380px) {
   .swiper{
     max-width: 300px;
@@ -639,7 +658,27 @@ footer {
   border: 1px solid #666666;
   margin: 5px;
   padding: 10px;
-  height: 50px;
+  height: max-content;
   background: #fefefe;
   text-align: center;
+}
+
+.swiper-slide i {
+  font-size: 33px;
+  color: #007ced;
+  padding: 15px 0px;
+}
+.swiper-slide h5 {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.swiper-slide h2 {
+  font-size: 48px;
+  color: #bbbbbb;
+  padding-bottom: 15px;
+}
+.swiper-wrapper{
+  background-color: #fff;
+  transition: background-color 0,3s;
 }
